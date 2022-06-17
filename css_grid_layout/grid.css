@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  flex-direction: column;
+}
+.app__header {
+  margin-top: 20px;
+  border-radius: 15px 0 0 0;
+  background: black;
+}
+
+.app__header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+/* Grid System */
+main {
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(4, 60px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.one {
+  background: #EAC435;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+}
+.two {
+  background: #345995;
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+.three {
+  background: #E40066;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+.four {
+  background: #03CEA4;
+  grid-column: 3 / span 3;
+}
+.five {
+  background: #FB4D3D;
+  grid-column: 3 / span 3;
+}

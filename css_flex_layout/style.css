@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root colors */
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very_dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very_light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--very_light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  flex-direction: column;
+}
+
+.app__header {
+  margin-top: 20px;
+  border-radius: 15px 0 0 0;
+  background:black;
+}
+
+.app__header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.app__container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.app__container-wrapper {
+  display: flex;
+  border-radius: 12px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.app__container-box {
+  padding: 40px;
+}
+
+.app__container-box1 {
+  flex: 1;
+  background-color: var(--bright-orange);
+}
+
+.app__container-box2 {
+  flex: 1;
+  background-color: var(--dark-cyan);
+}
+
+.app__container-box3 {
+  flex: 1;
+  background-color: var(--very_dark-cyan);
+}
+
+.app__container-box h2 {
+  font-size: 30px;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--transparent-white);
+}
+
+.app__container-box p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  line-height: 1.6;
+}
+
+.app__container-box a {
+  display: inline-block;
+  background-color: var(--transparent-white);
+  padding: 13px 27px;
+  border: 2px solid var(--transparent-white);
+  margin-top: 60px;
+  border-radius: 26px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.app__container-box1 a {
+  color: var(--bright-orange);
+}
+
+.app__container-box2 a {
+  color: var(--dark-cyan);
+}
+
+.app__container-box3 a {
+  color: var(--very_dark-cyan);
+}
+
+.app__container-box a:hover {
+  color: var(--transparent-white);
+  background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .app__container-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .app__container-wrapper {
+    margin: 2rem 0.5rem;
+  }
+}
